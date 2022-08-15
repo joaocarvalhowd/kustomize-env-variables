@@ -6,7 +6,7 @@ repoServer:
 server:
   config:
     kustomize.buildOptions: --enable-helm
-
+      
   additionalApplications:
     - name: dev-app
       namespace: ''

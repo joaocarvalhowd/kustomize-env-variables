@@ -1,0 +1,6 @@
+resources:
+  - ../../base/deployment-test
+
+configMapGenerator:
+  - name: the-map
+    env: config.properties
