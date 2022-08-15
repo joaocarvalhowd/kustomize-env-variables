@@ -1,0 +1,26 @@
+repoServer:
+  env:
+    - name: TEST
+      value: 'true'
+
+server:
+  config:
+    kustomize.buildOptions: --enable-helm
+
+  additionalApplications:
+    - name: dev-app
+      namespace: ''
+      additionalLabels: {}
+      additionalAnnotations: {}
+      project: default
+      source:
+        repoURL: https://github.com/joaocarvalhowd/kustomize-env-variables
+        targetRevision: main
+        path: overlays/dev-app
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: ''
+      syncPolicy:
+        automated:
+          prune: false
+          selfHeal: true

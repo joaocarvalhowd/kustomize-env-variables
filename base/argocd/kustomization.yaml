@@ -1,0 +1,7 @@
+resources:
+  - namespace.yaml
+
+generators:
+- helm-argocd.yaml
+
+namespace: argocd

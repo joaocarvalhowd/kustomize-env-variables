@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+  namespace: default
+spec:
+  containers:
+  - image: busybox
+    command:
+      - echo $TEST
+      - sleep
+      - "3600"
+    imagePullPolicy: IfNotPresent
+    name: busybox
+    env:
+      - name: TEST
+        valueFrom:
+          configMapKeyRef:
+            name: the-map
+            key: TEST
+  restartPolicy: Always
