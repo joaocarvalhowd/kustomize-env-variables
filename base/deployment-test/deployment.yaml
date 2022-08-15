@@ -7,7 +7,6 @@ spec:
   containers:
   - image: busybox
     command:
-      - echo "$TEST"
       - sleep
       - "3600"
     imagePullPolicy: IfNotPresent
