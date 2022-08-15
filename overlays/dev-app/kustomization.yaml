@@ -9,4 +9,4 @@ configMapGenerator:
 secretGenerator:
   - name: the-secret
     namespace: default
-    env: config.properties
+    env: .env.secret
