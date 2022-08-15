@@ -1,7 +1,7 @@
 repoServer:
   env:
     - name: TEST
-      value: 'true'
+      value: 'HEY'
 
 server:
   config:

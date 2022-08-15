@@ -5,3 +5,8 @@ configMapGenerator:
   - name: the-map
     namespace: default
     env: config.properties
+
+secretGenerator:
+  - name: the-secret
+    namespace: default
+    env: config.properties
