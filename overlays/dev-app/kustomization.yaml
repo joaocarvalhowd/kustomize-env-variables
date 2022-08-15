@@ -3,4 +3,5 @@ resources:
 
 configMapGenerator:
   - name: the-map
+    namespace: default
     env: config.properties
