@@ -1463,7 +1463,7 @@ server:
       # -- Repository to use for extensions image
       repository: "ghcr.io/argoproj-labs/argocd-extensions"
       # -- Tag to use for extensions image
-      tag: "v0.1.0"
+      tag: "v0.2.1"
       # -- Image pull policy for extensions
       imagePullPolicy: IfNotPresent
 
